@@ -15,8 +15,8 @@ makeCacheMatrix <- function(x = matrix()) {
                 m <<- NULL
         }
         get <- function() x
-        setmatrix <- function(inverse) m <<- inverse
-        getmatrix <- function() m
+        setmatrix <- function(inverse) {m <<- inverse}
+        getmatrix <- function() {m}
         list(set = set, 
              get = get,
              setmatrix = setmatrix,
